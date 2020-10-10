@@ -32,5 +32,8 @@ module.exports = {
     },
   },
   plugins: ['react', 'unicorn', 'promise', '@typescript-eslint'],
-  rules: { 'linebreak-style': [0, 'error', 'windows'] },
+  rules: {
+    'linebreak-style': [0, 'error', 'windows'],
+    'import/no-extraneous-dependencies': [ERROR, { devDependencies: true }],
+  },
 };
